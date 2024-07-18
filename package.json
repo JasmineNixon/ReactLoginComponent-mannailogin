@@ -1,6 +1,6 @@
 {
-  "name": "login-mannai-component-oauth1",
-  "version": "2.0.2",
+  "name": "mannai-components-package",
+  "version": "1.0.0",
   "description": "A reusable login component for React",
   "main": "dist/index.js",
   "files": [
@@ -30,7 +30,9 @@
     "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
+    "@react-oauth/google": "^0.12.1",
     "file-loader": "^6.2.0",
+    "google-auth-library": "^9.11.0",
     "prop-types": "^15.8.1",
     "react-router-dom": "^6.24.0",
     "sass": "^1.77.6",

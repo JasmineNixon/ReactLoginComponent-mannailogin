@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import './styles.css';
 import './LoginComponents.scss';
 
-const LoginTokenAuth = ({ onLogin, onOAuth, logo, logoStyle }) => {
+const LoginWithGoogle = ({ onLogin, onOAuth, logo, logoStyle }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState({
@@ -125,7 +124,7 @@ const LoginTokenAuth = ({ onLogin, onOAuth, logo, logoStyle }) => {
                   />
                   {errors.password && <div className="error">{errors.password}</div>}
                 </div>
-                <div className='width100'>
+                <div className='width100 loginoptions'>
                   <span>
                     <input type="checkbox" id="exampleCheckbox" name="example" />
                     <label for="exampleCheckbox">remember me</label>
@@ -141,7 +140,7 @@ const LoginTokenAuth = ({ onLogin, onOAuth, logo, logoStyle }) => {
                 </button>
                 <h3 style={{textAlign:'center'}}>OR</h3>
                 <button type="button" onClick={onOAuth} className="btn btn-secondary">
-                  SignIn with OAuth
+                  SignIn with Google
                 </button>
               </div>
             </div>
@@ -152,9 +151,9 @@ const LoginTokenAuth = ({ onLogin, onOAuth, logo, logoStyle }) => {
   );
 };
 
-LoginTokenAuth.propTypes = {
+LoginWithGoogle.propTypes = {
   onLogin: PropTypes.func.isRequired,
   onOAuth: PropTypes.func.isRequired
 };
 
-export default LoginTokenAuth;
+export default LoginWithGoogle;

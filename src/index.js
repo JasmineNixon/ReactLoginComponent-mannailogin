@@ -1,7 +1,8 @@
 // src/index.js
 
-import LoginComponent from './LoginComponent';
-import LoginTokenAuth from './LoginTokenAuth';
+import LoginComponent from './Components/Login/LoginComponent';
+import LoginTokenAuth from './Components/Login/LoginTokenAuth';
+import LoginWithGoogle from './Components/Login/LoginWithGoogle';
 
-export default {LoginComponent,LoginTokenAuth};
+export default {LoginComponent,LoginTokenAuth,LoginWithGoogle};
 
